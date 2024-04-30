@@ -1,4 +1,19 @@
-namespace FalconShop;
+/**
+    GUI:            Checkout, Shop Products
+    UI DESIGNER:    Yssa Clarisse Pasia (Checkout)
+                    Sean David Vallespin (Shop Products)
+
+    GRAPHICAL USER INTERFACE (GUI) DESIGN
+    Form Name:      Checkout
+    View For:       Customer
+
+    GRAPHICAL USER INTERFACE (GUI) DESIGN
+    Form Name:      Products
+    View For:       Customer
+*/
+
+
+namespace FalconShop.ClassLibrary;
 
 public class Cart
 {
