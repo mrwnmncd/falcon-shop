@@ -1,5 +1,7 @@
 using System.IO;
 
+namespace App.API;
+
 class FileManager {
     public static void CreateFile(string path, bool overwrite = false) {
         if (overwrite) File.Create(path).Close();
