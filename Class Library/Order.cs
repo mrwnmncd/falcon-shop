@@ -1,4 +1,4 @@
-/**
+/*
     GUI:            Checkout
     UI DESIGNER:    Yssa Clarisse Pasia (Checkout)
 
@@ -6,9 +6,7 @@
     Form Name:      Checkout
     View For:       Customer
 */
-
-
-namespace FalconShop.ClassLibrary;
+namespace App.Models;
 
 public class ShopOrder {
     /* GUI CONTROL:         Textbox (disabled), Label */
