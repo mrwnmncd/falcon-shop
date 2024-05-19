@@ -33,10 +33,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             ComboBox_Select_Product = new Guna.UI2.WinForms.Guna2ComboBox();
             ListBox_Select_Variant = new ListBox();
-            button1 = new Button();
+            Button_Add_To_Cart = new Button();
             PictureBox_Product = new PictureBox();
             Label_Price = new Label();
-            label2 = new Label();
+            Label_Program_Message = new Label();
             TextBox_Enter_Quantity = new TextBox();
             ((System.ComponentModel.ISupportInitialize)PictureBox_Product).BeginInit();
             SuspendLayout();
@@ -72,19 +72,19 @@
             ListBox_Select_Variant.Size = new Size(256, 292);
             ListBox_Select_Variant.TabIndex = 1;
             // 
-            // button1
+            // Button_Add_To_Cart
             // 
-            button1.BackColor = Color.Transparent;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(886, 528);
-            button1.Name = "button1";
-            button1.Size = new Size(227, 55);
-            button1.TabIndex = 2;
-            button1.UseVisualStyleBackColor = false;
+            Button_Add_To_Cart.BackColor = Color.Transparent;
+            Button_Add_To_Cart.Cursor = Cursors.Hand;
+            Button_Add_To_Cart.FlatAppearance.BorderSize = 0;
+            Button_Add_To_Cart.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            Button_Add_To_Cart.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            Button_Add_To_Cart.FlatStyle = FlatStyle.Flat;
+            Button_Add_To_Cart.Location = new Point(886, 528);
+            Button_Add_To_Cart.Name = "Button_Add_To_Cart";
+            Button_Add_To_Cart.Size = new Size(227, 55);
+            Button_Add_To_Cart.TabIndex = 2;
+            Button_Add_To_Cart.UseVisualStyleBackColor = false;
             // 
             // PictureBox_Product
             // 
@@ -107,16 +107,16 @@
             Label_Price.TabIndex = 4;
             Label_Price.Text = "PHP 0.00";
             // 
-            // label2
+            // Label_Program_Message
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(830, 620);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 20);
-            label2.TabIndex = 5;
-            label2.Text = "ERROR";
+            Label_Program_Message.AutoSize = true;
+            Label_Program_Message.BackColor = Color.Transparent;
+            Label_Program_Message.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Program_Message.Location = new Point(830, 620);
+            Label_Program_Message.Name = "Label_Program_Message";
+            Label_Program_Message.Size = new Size(73, 20);
+            Label_Program_Message.TabIndex = 5;
+            Label_Program_Message.Text = "ERROR";
             // 
             // TextBox_Enter_Quantity
             // 
@@ -134,10 +134,10 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1164, 661);
             Controls.Add(TextBox_Enter_Quantity);
-            Controls.Add(label2);
+            Controls.Add(Label_Program_Message);
             Controls.Add(Label_Price);
             Controls.Add(PictureBox_Product);
-            Controls.Add(button1);
+            Controls.Add(Button_Add_To_Cart);
             Controls.Add(ListBox_Select_Variant);
             Controls.Add(ComboBox_Select_Product);
             DoubleBuffered = true;
@@ -154,10 +154,10 @@
 
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_Select_Product;
         private ListBox ListBox_Select_Variant;
-        private Button button1;
+        private Button Button_Add_To_Cart;
         private PictureBox PictureBox_Product;
         private Label Label_Price;
-        private Label label2;
+        private Label Label_Program_Message;
         private TextBox TextBox_Enter_Quantity;
     }
 }
