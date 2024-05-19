@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cart));
             button1 = new Button();
-            listBox1 = new ListBox();
+            ListBox_Enumerate_Cart = new ListBox();
             textBox1 = new TextBox();
             button2 = new Button();
             SuspendLayout();
@@ -40,7 +40,7 @@
             button1.BackColor = Color.Transparent;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             button1.ForeColor = Color.White;
             button1.Location = new Point(760, 563);
             button1.Margin = new Padding(2);
@@ -49,23 +49,23 @@
             button1.TabIndex = 4;
             button1.UseVisualStyleBackColor = false;
             // 
-            // listBox1
+            // ListBox_Enumerate_Cart
             // 
-            listBox1.BackColor = Color.FromArgb(21, 70, 131);
-            listBox1.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            listBox1.ForeColor = Color.White;
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 19;
-            listBox1.Location = new Point(132, 216);
-            listBox1.Margin = new Padding(2);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(574, 327);
-            listBox1.TabIndex = 6;
+            ListBox_Enumerate_Cart.BackColor = Color.FromArgb(21, 70, 131);
+            ListBox_Enumerate_Cart.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            ListBox_Enumerate_Cart.ForeColor = Color.White;
+            ListBox_Enumerate_Cart.FormattingEnabled = true;
+            ListBox_Enumerate_Cart.Items.AddRange(new object[] { "item 1", "item 2" });
+            ListBox_Enumerate_Cart.Location = new Point(132, 216);
+            ListBox_Enumerate_Cart.Margin = new Padding(2);
+            ListBox_Enumerate_Cart.Name = "ListBox_Enumerate_Cart";
+            ListBox_Enumerate_Cart.Size = new Size(574, 324);
+            ListBox_Enumerate_Cart.TabIndex = 6;
             // 
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Control;
-            textBox1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Font = new Font("Segoe UI", 11F);
             textBox1.ForeColor = Color.DarkSlateBlue;
             textBox1.Location = new Point(762, 516);
             textBox1.Margin = new Padding(2);
@@ -79,7 +79,7 @@
             button2.BackColor = Color.Transparent;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
             button2.ForeColor = Color.DarkSlateBlue;
             button2.Location = new Point(124, 559);
             button2.Margin = new Padding(2);
@@ -98,7 +98,7 @@
             ClientSize = new Size(1161, 659);
             Controls.Add(textBox1);
             Controls.Add(button2);
-            Controls.Add(listBox1);
+            Controls.Add(ListBox_Enumerate_Cart);
             Controls.Add(button1);
             DoubleBuffered = true;
             ForeColor = Color.MidnightBlue;
@@ -111,7 +111,7 @@
 
         #endregion
         private Button button1;
-        private ListBox listBox1;
+        private ListBox ListBox_Enumerate_Cart;
         private Button button2;
         private TextBox textBox1;
     }

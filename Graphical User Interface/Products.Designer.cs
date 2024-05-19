@@ -273,6 +273,7 @@
             Button_UPPER_PE_ADD_TO_CART.TabIndex = 11;
             Button_UPPER_PE_ADD_TO_CART.Text = "Add to Cart";
             Button_UPPER_PE_ADD_TO_CART.UseVisualStyleBackColor = true;
+            Button_UPPER_PE_ADD_TO_CART.Click += AddToCart;
             // 
             // ComboBox_UPPER_PE_GENDER
             // 
@@ -441,6 +442,7 @@
             Button_LOWER_PE_ADD_TO_CART.TabIndex = 11;
             Button_LOWER_PE_ADD_TO_CART.Text = "Add to Cart";
             Button_LOWER_PE_ADD_TO_CART.UseVisualStyleBackColor = true;
+            Button_LOWER_PE_ADD_TO_CART.Click += AddToCart;
             // 
             // ComboBox_LOWER_PE_GENDER
             // 
@@ -584,6 +586,7 @@
             Button_SET_PE_ADD_TO_CART.TabIndex = 11;
             Button_SET_PE_ADD_TO_CART.Text = "Add to Cart";
             Button_SET_PE_ADD_TO_CART.UseVisualStyleBackColor = true;
+            Button_SET_PE_ADD_TO_CART.Click += AddToCart_PESet;
             // 
             // ComboBox_SET_PE_GENDER
             // 
@@ -727,6 +730,7 @@
             Button_SET_UNIF_ADD_TO_CART.TabIndex = 11;
             Button_SET_UNIF_ADD_TO_CART.Text = "Add to Cart";
             Button_SET_UNIF_ADD_TO_CART.UseVisualStyleBackColor = true;
+            Button_SET_UNIF_ADD_TO_CART.Click += AddToCart_UnifSet;
             // 
             // ComboBox_SET_UNIF_GENDER
             // 
@@ -881,6 +885,7 @@
             Button_LOWER_UNIF_ADD_TO_CART.TabIndex = 11;
             Button_LOWER_UNIF_ADD_TO_CART.Text = "Add to Cart";
             Button_LOWER_UNIF_ADD_TO_CART.UseVisualStyleBackColor = true;
+            Button_LOWER_UNIF_ADD_TO_CART.Click += AddToCart;
             // 
             // ComboBox_LOWER_UNIF_GENDER
             // 
@@ -1036,7 +1041,7 @@
             Button_UPPER_UNIF_ADD_TO_CART.TabIndex = 11;
             Button_UPPER_UNIF_ADD_TO_CART.Text = "Add to Cart";
             Button_UPPER_UNIF_ADD_TO_CART.UseVisualStyleBackColor = true;
-            Button_UPPER_UNIF_ADD_TO_CART.Click += AddToCart_UpperUnif;
+            Button_UPPER_UNIF_ADD_TO_CART.Click += AddToCart;
             // 
             // ComboBox_UPPER_UNIF_GENDER
             // 

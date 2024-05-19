@@ -220,6 +220,7 @@
             Margin = new Padding(2);
             Name = "Home";
             Text = "Home";
+            FormClosing += Home_FormClosing;
             Shown += Trigger_Shown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

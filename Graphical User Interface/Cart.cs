@@ -1,9 +1,12 @@
+using System.Windows.Controls;
+using App.Models;
+
 namespace App.GUI {
     public partial class Cart : Form {
-        Client clientInstance;
+        private readonly Client _client;
 
         public Cart(Client client) {
-            clientInstance = client;
+            _client = client;
             InitializeComponent();
         }
 
@@ -15,6 +18,16 @@ namespace App.GUI {
             Console.WriteLine("    " + $"GUI: CLOSE PRODUCTS");
             this.Hide();
             e.Cancel = true;
+        }
+
+        private void RenderCart() {
+            Models.Cart? cart = _client.User.Cart;
+
+            foreach (InventoryItem item in cart!.Items) {
+                ListBoxItem product = new ListBoxItem();
+                product.AddText(item.Product.Name);
+                ListBox_Enumerate_Cart.Items.add(product);
+            }
         }
     }
 }
