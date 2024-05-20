@@ -403,3 +403,5 @@ FodyWeavers.xsd
 
 
 Properties/launchSettings.json
+
+falcons.sqlite
