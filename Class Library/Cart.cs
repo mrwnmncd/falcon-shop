@@ -21,13 +21,14 @@ namespace App.Models;
 
 public class Cart(Account account, Store store) {
     public Account Account { get; set; } = account ?? throw new ArgumentNullException(nameof(account));
+    public Store Store { get; set; } = store ?? throw new ArgumentNullException(nameof(store));
     public List<InventoryItem> Items = [];
 
-    public InventoryItem? AddProduct(Product product, int quantity = 1) {
+    public InventoryItem? AddItem(Product product, int quantity = 1) {
         ArgumentNullException.ThrowIfNull(product);
         if (product.Id == null) throw new ArgumentNullException(nameof(product.Id) + " is required.");
 
-        Product? item = store.FindProduct(product.Id);
+        Product? item = store.FindProductById(product.Id);
         if (item is null) return null;
         
         InventoryItem cartItem = new() {
@@ -39,19 +40,17 @@ public class Cart(Account account, Store store) {
             Type = item.Type,
             Quantity = quantity
         };
-
         foreach (InventoryItem punch in Items) {
             if (punch.Id != cartItem.Id) continue;
             punch.Quantity += quantity;
             return punch;
         }
-
         Items.Add(cartItem);
         return cartItem;
     }
 
-    public bool RemoveFromCart(Product product) {
-        Product? item = store.FindProduct(product.Id);
+    public bool RemoveItem(Product product) {
+        Product? item = store.FindProductById(product.Id);
         if (item is null) return false;
         
         InventoryItem? cartItem = Items.Find(p => p.Id == item.Id);
@@ -59,10 +58,13 @@ public class Cart(Account account, Store store) {
         Items.Remove(cartItem);
         return true;
     }
+    
+    public bool Clear() {
+        Items.Clear();
+        return true;
+    }
 
     public double TotalPrice() {
         return Items.Sum(p => p.Price * p.Quantity);
     }
-    
-    
 }

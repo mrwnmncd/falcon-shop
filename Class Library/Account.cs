@@ -16,6 +16,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using App.API;
 using Microsoft.Data.Sqlite;
 using App.Environment;
 
@@ -25,9 +26,7 @@ public class Account : User {
     public string Email { get; set; } = "";
     public string Username { get; set; } = "";
     public string Password { get; set; } = "";
-
-    // private string[] AccountType = new[] { "Customer", "Student", "Staff", "Admin" };
-
+    
     public Account() { }
 
     public dynamic Register() {
@@ -56,12 +55,13 @@ public class Account : User {
     }
 
     public static Account? Login(string username, string password) {
-        Account user = Lookup(username);
+        Account? user = Lookup(username);
+        // TODO: allow lookup with id
         if (user.Password != password) return null;
         return user;
     }
 
-    public static Account Lookup(string username) {
+    public static Account? Lookup(string username) {
         SqliteConnection connection = new SqliteConnection($"Data Source={Constants.DatabaseUrl}");
         connection.Open();
         {
@@ -74,6 +74,7 @@ public class Account : User {
             var userReader = userCommand.ExecuteReader();
             accountReader.Read();
             userReader.Read();
+            if (accountReader.GetString(0) is null) return null;
             Account account = new Account() {
                 Id = accountReader.GetString(0) ?? "",
                 Username = accountReader.GetString(1) ?? "",

@@ -180,7 +180,7 @@
             label_FullName.AutoSize = true;
             label_FullName.BackColor = Color.Transparent;
             label_FullName.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label_FullName.ForeColor = Color.FromArgb(21, 70, 131);
+            label_FullName.ForeColor = Color.FromArgb(35, 69, 127);
             label_FullName.Location = new Point(2, 22);
             label_FullName.Margin = new Padding(2, 0, 2, 0);
             label_FullName.Name = "label_FullName";

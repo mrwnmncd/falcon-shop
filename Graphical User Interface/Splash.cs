@@ -18,7 +18,7 @@ namespace App.GUI {
             this.Hide();
 
             if (_client.User.IsLoggedIn) {
-                _client.UI.Home.Show();
+                _client.UI.StudentHome.Show();
             }
             else {
                 _client.UI.Login.Show();

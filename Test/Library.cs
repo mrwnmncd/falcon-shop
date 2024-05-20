@@ -152,12 +152,12 @@ public abstract class Library {
                 { // ADD PRODUCT TO CART
                     Console.WriteLine("    " + "CART: ADD PRODUCT TO CART");
                     Product? product1 = new() { Id = "UNIFORM-001" };
-                    product1 = userCart.AddProduct(product1);
+                    product1 = userCart.AddItem(product1);
                     if (product1 is not null)
                         Console.WriteLine("    " + "    " + $"ADD TO CART: {product1.Name}");
                     else Console.WriteLine("    " + "    " + "Product not found");
                     Product? product2 = new() { Id = "UNIFORM-002" };
-                    product2 = userCart.AddProduct(product2);
+                    product2 = userCart.AddItem(product2);
                     if (product2 is not null)
                         Console.WriteLine("    " + "    " + $"ADD TO CART: {product2.Name}");
                     else Console.WriteLine("    " + "    " + "Product not found");
@@ -178,7 +178,7 @@ public abstract class Library {
                 { // REMOVE PRODUCT FROM CART
                     Console.WriteLine("    " + "CART: REMOVE PRODUCT FROM CART");
                     InventoryItem product = new() { Id = "UNIFORM-001" };
-                    userCart.RemoveFromCart(product);
+                    userCart.RemoveItem(product);
                 }
 
                 { // CHECK CART

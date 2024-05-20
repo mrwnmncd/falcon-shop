@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             TextBox_Enter_UsernameID = new Guna.UI2.WinForms.Guna2TextBox();
             TextBox_Enter_Password = new Guna.UI2.WinForms.Guna2TextBox();
             Button_Log_In = new Guna.UI2.WinForms.Guna2Button();
@@ -43,7 +43,7 @@
             // 
             // TextBox_Enter_UsernameID
             // 
-            TextBox_Enter_UsernameID.CustomizableEdges = customizableEdges7;
+            TextBox_Enter_UsernameID.CustomizableEdges = customizableEdges1;
             TextBox_Enter_UsernameID.DefaultText = "";
             TextBox_Enter_UsernameID.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Enter_UsernameID.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -56,11 +56,11 @@
             TextBox_Enter_UsernameID.PasswordChar = '\0';
             TextBox_Enter_UsernameID.PlaceholderText = "";
             TextBox_Enter_UsernameID.SelectedText = "";
-            TextBox_Enter_UsernameID.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            TextBox_Enter_UsernameID.ShadowDecoration.CustomizableEdges = customizableEdges2;
             // 
             // TextBox_Enter_Password
             // 
-            TextBox_Enter_Password.CustomizableEdges = customizableEdges9;
+            TextBox_Enter_Password.CustomizableEdges = customizableEdges3;
             TextBox_Enter_Password.DefaultText = "";
             TextBox_Enter_Password.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Enter_Password.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -70,29 +70,30 @@
             resources.ApplyResources(TextBox_Enter_Password, "TextBox_Enter_Password");
             TextBox_Enter_Password.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             TextBox_Enter_Password.Name = "TextBox_Enter_Password";
-            TextBox_Enter_Password.PasswordChar = '\0';
+            TextBox_Enter_Password.PasswordChar = '•';
             TextBox_Enter_Password.PlaceholderText = "";
             TextBox_Enter_Password.SelectedText = "";
-            TextBox_Enter_Password.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            TextBox_Enter_Password.ShadowDecoration.CustomizableEdges = customizableEdges4;
             // 
             // Button_Log_In
             // 
             Button_Log_In.BorderRadius = 25;
-            Button_Log_In.CustomizableEdges = customizableEdges11;
+            Button_Log_In.CustomizableEdges = customizableEdges5;
             Button_Log_In.DisabledState.BorderColor = Color.DarkGray;
             Button_Log_In.DisabledState.CustomBorderColor = Color.DarkGray;
             Button_Log_In.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             Button_Log_In.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Button_Log_In.FillColor = Color.FromArgb(29, 73, 167);
+            Button_Log_In.FillColor = Color.FromArgb(35, 69, 127);
             resources.ApplyResources(Button_Log_In, "Button_Log_In");
             Button_Log_In.ForeColor = Color.White;
             Button_Log_In.Name = "Button_Log_In";
-            Button_Log_In.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            Button_Log_In.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Button_Log_In.Click += Button_Log_In_Click;
             // 
             // Label_CreateAccount
             // 
-            Label_CreateAccount.BackColor = Color.Transparent;
             resources.ApplyResources(Label_CreateAccount, "Label_CreateAccount");
+            Label_CreateAccount.BackColor = Color.FromArgb(246, 248, 248);
             Label_CreateAccount.ForeColor = Color.FromArgb(29, 73, 167);
             Label_CreateAccount.Name = "Label_CreateAccount";
             Label_CreateAccount.Click += Label_Sign_Up_Click;
@@ -108,7 +109,6 @@
             DoubleBuffered = true;
             Name = "Login";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

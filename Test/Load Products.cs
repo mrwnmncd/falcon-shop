@@ -49,29 +49,26 @@ public class ShopUtilities {
             { "Unisex NSTP Shirt - Large", "UNIFORM-064", "460" },
             { "Unisex NSTP Shirt - Extra Large", "UNIFORM-065", "460" },
             { "Unisex NSTP Shirt - Double Extra Large", "UNIFORM-066", "460" },
-            { "Lanyard for College of Architecture", "ACCESSORIES-011", "460" },
-            { "Lanyard for College of Business Administration", "ACCESSORIES-010", "460" },
-            { "Lanyard for College of Engineering", "ACCESSORIES-009", "460" },
-            { "Lanyard for College of Law", "ACCESSORIES-008", "460" },
-            { "Lanyard for College of Education and Liberal Arts", "ACCESSORIES-002", "460" },
-            { "Lanyard for College of Nursing", "ACCESSORIES-003", "460" },
-            { "Lanyard for College of Pharmacy", "ACCESSORIES-004", "460" },
-            { "Lanyard for College of Science", "ACCESSORIES-001", "460" },
-            { "Lanyard for Graduate School", "ACCESSORIES-005", "460" },
-            { "Lanyard for St. Vincent School of Theology", "ACCESSORIES-006", "460" },
-            { "Lanyard for Basic Education Department", "ACCESSORIES-007", "460" }
+            { "Lanyard - College of Architecture", "ACCESSORIES-011", "460" },
+            { "Lanyard - College of Business Administration", "ACCESSORIES-010", "460" },
+            { "Lanyard - College of Engineering", "ACCESSORIES-009", "460" },
+            { "Lanyard - College of Law", "ACCESSORIES-008", "460" },
+            { "Lanyard - College of Education and Liberal Arts", "ACCESSORIES-002", "460" },
+            { "Lanyard - College of Nursing", "ACCESSORIES-003", "460" },
+            { "Lanyard - College of Pharmacy", "ACCESSORIES-004", "460" },
+            { "Lanyard - College of Science", "ACCESSORIES-001", "460" },
+            { "Lanyard - Graduate School", "ACCESSORIES-005", "460" },
+            { "Lanyard - St. Vincent School of Theology", "ACCESSORIES-006", "460" },
+            { "Lanyard - Basic Education Department", "ACCESSORIES-007", "460" }
         };
-
-        foreach (var item in items) {
-            Console.WriteLine(item);
-            Console.WriteLine(item[0]);
-            Console.WriteLine(item[1]);
-            Console.WriteLine(item[2]);
-            // store.AddProduct(new InventoryItem() {
-            //     Name = item[0],
-            //     Id = item[1],
-            //     Price = decimal.Parse(item[2])
-            // });
+        
+        for (int i = 0; i < items.GetLength(0); i++) {
+            store.AddProduct(new InventoryItem() {
+                Name = items[i, 0],
+                Id = items[i, 1],
+                Price = double.Parse(items[i, 2]),
+                Quantity = 1000
+            });
         }
 
     }

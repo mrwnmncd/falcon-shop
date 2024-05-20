@@ -28,333 +28,192 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Checkout));
-            panel2 = new Panel();
-            label5 = new Label();
-            textBox2 = new TextBox();
-            button2 = new Button();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
-            label4 = new Label();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            radioButton5 = new RadioButton();
-            radioButton4 = new RadioButton();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
-            label3 = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            ListBox_Enumerate_CartItems = new ListBox();
+            Button_SubmitOrder = new Guna.UI2.WinForms.Guna2Button();
+            Button_ClearCart = new Guna.UI2.WinForms.Guna2Button();
+            Button_ClearItem = new Guna.UI2.WinForms.Guna2Button();
+            Label_Cart_Count = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            Label_Subtotal = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            Label_ProgramMessage = new Label();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
-            // panel2
+            // ListBox_Enumerate_CartItems
             // 
-            panel2.BackColor = Color.LavenderBlush;
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(dateTimePicker2);
-            panel2.Controls.Add(dateTimePicker1);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(pictureBox4);
-            panel2.Controls.Add(pictureBox3);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(radioButton5);
-            panel2.Controls.Add(radioButton4);
-            panel2.Controls.Add(radioButton3);
-            panel2.Controls.Add(radioButton2);
-            panel2.Controls.Add(radioButton1);
-            panel2.Controls.Add(label3);
-            panel2.Location = new Point(47, 125);
-            panel2.Margin = new Padding(2, 2, 2, 2);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(718, 363);
-            panel2.TabIndex = 9;
+            ListBox_Enumerate_CartItems.ColumnWidth = 4;
+            ListBox_Enumerate_CartItems.FormattingEnabled = true;
+            ListBox_Enumerate_CartItems.Location = new Point(599, 165);
+            ListBox_Enumerate_CartItems.Name = "ListBox_Enumerate_CartItems";
+            ListBox_Enumerate_CartItems.SelectionMode = SelectionMode.MultiSimple;
+            ListBox_Enumerate_CartItems.Size = new Size(371, 344);
+            ListBox_Enumerate_CartItems.TabIndex = 0;
             // 
-            // label5
+            // Button_SubmitOrder
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
-            label5.ForeColor = Color.DarkGray;
-            label5.Location = new Point(52, 193);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(108, 18);
-            label5.TabIndex = 22;
-            label5.Text = "Card Number";
+            Button_SubmitOrder.BorderRadius = 25;
+            Button_SubmitOrder.CustomizableEdges = customizableEdges1;
+            Button_SubmitOrder.DisabledState.BorderColor = Color.DarkGray;
+            Button_SubmitOrder.DisabledState.CustomBorderColor = Color.DarkGray;
+            Button_SubmitOrder.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Button_SubmitOrder.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Button_SubmitOrder.FillColor = Color.FromArgb(29, 73, 167);
+            Button_SubmitOrder.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            Button_SubmitOrder.ForeColor = Color.White;
+            Button_SubmitOrder.Location = new Point(976, 461);
+            Button_SubmitOrder.Name = "Button_SubmitOrder";
+            Button_SubmitOrder.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            Button_SubmitOrder.Size = new Size(180, 48);
+            Button_SubmitOrder.TabIndex = 3;
+            Button_SubmitOrder.Text = "SUBMIT ORDER";
+            Button_SubmitOrder.Click += Button_SubmitOrder_Click;
             // 
-            // textBox2
+            // Button_ClearCart
             // 
-            textBox2.Font = new Font("Segoe UI", 7F);
-            textBox2.Location = new Point(181, 193);
-            textBox2.Margin = new Padding(2, 2, 2, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(210, 23);
-            textBox2.TabIndex = 21;
+            Button_ClearCart.BorderRadius = 15;
+            Button_ClearCart.CustomizableEdges = customizableEdges3;
+            Button_ClearCart.DisabledState.BorderColor = Color.DarkGray;
+            Button_ClearCart.DisabledState.CustomBorderColor = Color.DarkGray;
+            Button_ClearCart.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Button_ClearCart.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Button_ClearCart.FillColor = Color.FromArgb(221, 94, 86);
+            Button_ClearCart.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            Button_ClearCart.ForeColor = Color.White;
+            Button_ClearCart.Location = new Point(976, 231);
+            Button_ClearCart.Name = "Button_ClearCart";
+            Button_ClearCart.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            Button_ClearCart.Size = new Size(180, 33);
+            Button_ClearCart.TabIndex = 4;
+            Button_ClearCart.Text = "CLEAR CART";
+            Button_ClearCart.Click += Button_CancelOrder_Click;
             // 
-            // button2
+            // Button_ClearItem
             // 
-            button2.BackColor = Color.Transparent;
-            button2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.DarkSlateBlue;
-            button2.Location = new Point(522, 285);
-            button2.Margin = new Padding(2, 2, 2, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(162, 52);
-            button2.TabIndex = 20;
-            button2.Text = "Schedule";
-            button2.UseVisualStyleBackColor = false;
+            Button_ClearItem.BorderRadius = 15;
+            Button_ClearItem.CustomizableEdges = customizableEdges5;
+            Button_ClearItem.DisabledState.BorderColor = Color.DarkGray;
+            Button_ClearItem.DisabledState.CustomBorderColor = Color.DarkGray;
+            Button_ClearItem.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Button_ClearItem.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Button_ClearItem.FillColor = Color.FromArgb(221, 94, 86);
+            Button_ClearItem.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            Button_ClearItem.ForeColor = Color.White;
+            Button_ClearItem.Location = new Point(976, 192);
+            Button_ClearItem.Name = "Button_ClearItem";
+            Button_ClearItem.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Button_ClearItem.Size = new Size(180, 33);
+            Button_ClearItem.TabIndex = 5;
+            Button_ClearItem.Text = "CLEAR ITEM";
+            Button_ClearItem.Click += Button_ClearItems_Click;
             // 
-            // dateTimePicker2
+            // Label_Cart_Count
             // 
-            dateTimePicker2.Format = DateTimePickerFormat.Time;
-            dateTimePicker2.Location = new Point(289, 296);
-            dateTimePicker2.Margin = new Padding(2, 2, 2, 2);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(186, 27);
-            dateTimePicker2.TabIndex = 19;
+            Label_Cart_Count.BackColor = Color.Transparent;
+            Label_Cart_Count.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            Label_Cart_Count.ForeColor = Color.FromArgb(29, 73, 167);
+            Label_Cart_Count.Location = new Point(1090, 340);
+            Label_Cart_Count.Name = "Label_Cart_Count";
+            Label_Cart_Count.Size = new Size(13, 22);
+            Label_Cart_Count.TabIndex = 6;
+            Label_Cart_Count.Text = "0";
             // 
-            // dateTimePicker1
+            // Label_Subtotal
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(52, 296);
-            dateTimePicker1.Margin = new Padding(2, 2, 2, 2);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(201, 27);
-            dateTimePicker1.TabIndex = 18;
+            Label_Subtotal.AutoSize = false;
+            Label_Subtotal.BackColor = Color.Transparent;
+            Label_Subtotal.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_Subtotal.ForeColor = Color.FromArgb(29, 73, 167);
+            Label_Subtotal.Location = new Point(1051, 381);
+            Label_Subtotal.Margin = new Padding(0);
+            Label_Subtotal.Name = "Label_Subtotal";
+            Label_Subtotal.Size = new Size(102, 20);
+            Label_Subtotal.TabIndex = 7;
+            Label_Subtotal.Text = "PHP. 0.00";
+            Label_Subtotal.TextAlignment = ContentAlignment.TopCenter;
             // 
-            // label4
+            // guna2HtmlLabel1
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
-            label4.ForeColor = Color.DarkGray;
-            label4.Location = new Point(21, 246);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(120, 20);
-            label4.TabIndex = 17;
-            label4.Text = "Pick Up Date";
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.ForeColor = Color.FromArgb(29, 73, 167);
+            guna2HtmlLabel1.Location = new Point(766, 586);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(3, 2);
+            guna2HtmlLabel1.TabIndex = 8;
+            guna2HtmlLabel1.Text = null;
             // 
-            // pictureBox4
+            // Label_ProgramMessage
             // 
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(449, 43);
-            pictureBox4.Margin = new Padding(2, 2, 2, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(92, 80);
-            pictureBox4.TabIndex = 16;
-            pictureBox4.TabStop = false;
+            Label_ProgramMessage.AutoSize = true;
+            Label_ProgramMessage.BackColor = Color.Transparent;
+            Label_ProgramMessage.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Label_ProgramMessage.Location = new Point(835, 577);
+            Label_ProgramMessage.Name = "Label_ProgramMessage";
+            Label_ProgramMessage.Size = new Size(0, 25);
+            Label_ProgramMessage.TabIndex = 9;
             // 
-            // pictureBox3
+            // guna2Button1
             // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(338, 43);
-            pictureBox3.Margin = new Padding(2, 2, 2, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(82, 80);
-            pictureBox3.TabIndex = 15;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(206, 43);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(108, 80);
-            pictureBox2.TabIndex = 14;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(52, 43);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(126, 80);
-            pictureBox1.TabIndex = 13;
-            pictureBox1.TabStop = false;
-            // 
-            // radioButton5
-            // 
-            radioButton5.AutoSize = true;
-            radioButton5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton5.Location = new Point(598, 143);
-            radioButton5.Margin = new Padding(2, 2, 2, 2);
-            radioButton5.Name = "radioButton5";
-            radioButton5.Size = new Size(68, 22);
-            radioButton5.TabIndex = 12;
-            radioButton5.TabStop = true;
-            radioButton5.Text = "Cash";
-            radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton4.Location = new Point(346, 143);
-            radioButton4.Margin = new Padding(2, 2, 2, 2);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(81, 22);
-            radioButton4.TabIndex = 11;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "PayPal";
-            radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton3.Location = new Point(458, 143);
-            radioButton3.Margin = new Padding(2, 2, 2, 2);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(78, 22);
-            radioButton3.TabIndex = 10;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Gcash";
-            radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton2.Location = new Point(233, 143);
-            radioButton2.Margin = new Padding(2, 2, 2, 2);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(61, 22);
-            radioButton2.TabIndex = 9;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Visa";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButton1.Location = new Point(60, 143);
-            radioButton1.Margin = new Padding(2, 2, 2, 2);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(117, 22);
-            radioButton1.TabIndex = 8;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "MasterCard";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
-            label3.ForeColor = Color.DarkGray;
-            label3.Location = new Point(21, 11);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(148, 20);
-            label3.TabIndex = 7;
-            label3.Text = "Payment Method";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
-            label1.ImageAlign = ContentAlignment.MiddleLeft;
-            label1.Location = new Point(47, 33);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(323, 76);
-            label1.TabIndex = 6;
-            label1.Text = "Checkout";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(569, 51);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(46, 18);
-            label2.TabIndex = 7;
-            label2.Text = "Total";
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = Color.DarkSlateBlue;
-            textBox1.Location = new Point(621, 64);
-            textBox1.Margin = new Padding(2, 2, 2, 2);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "P";
-            textBox1.Size = new Size(138, 32);
-            textBox1.TabIndex = 11;
+            guna2Button1.BackColor = Color.Transparent;
+            guna2Button1.BorderRadius = 25;
+            guna2Button1.CustomizableEdges = customizableEdges7;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.FromArgb(29, 73, 167);
+            guna2Button1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(100, 512);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2Button1.Size = new Size(339, 57);
+            guna2Button1.TabIndex = 10;
+            guna2Button1.Text = "HOME";
             // 
             // Checkout
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.Checkout_cs;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(808, 512);
-            Controls.Add(label2);
-            Controls.Add(panel2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
+            ClientSize = new Size(1162, 653);
+            Controls.Add(guna2Button1);
+            Controls.Add(Label_ProgramMessage);
+            Controls.Add(guna2HtmlLabel1);
+            Controls.Add(Label_Subtotal);
+            Controls.Add(Label_Cart_Count);
+            Controls.Add(Button_ClearItem);
+            Controls.Add(Button_ClearCart);
+            Controls.Add(Button_SubmitOrder);
+            Controls.Add(ListBox_Enumerate_CartItems);
             DoubleBuffered = true;
-            Margin = new Padding(2, 2, 2, 2);
             Name = "Checkout";
-            Text = "Form2";
+            Text = "Check Out";
             FormClosing += Closing;
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Shown += Trigger_Shown;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Panel panel2;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox1;
-        private RadioButton radioButton1;
-        private Label label3;
-        private PictureBox pictureBox1;
-        private RadioButton radioButton5;
-        private RadioButton radioButton4;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private Label label4;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
-        private Button button2;
-        private TextBox textBox2;
-        private Label label5;
+        private ListBox ListBox_Enumerate_CartItems;
+        private Guna.UI2.WinForms.Guna2Button Button_SubmitOrder;
+        private Guna.UI2.WinForms.Guna2Button Button_ClearCart;
+        private Guna.UI2.WinForms.Guna2Button Button_ClearItem;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Label_Cart_Count;
+        private Guna.UI2.WinForms.Guna2HtmlLabel Label_Subtotal;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Label Label_ProgramMessage;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

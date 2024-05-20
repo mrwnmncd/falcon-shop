@@ -35,7 +35,7 @@ namespace App.GUI {
         private void button_Cart_Click(object sender, EventArgs e)
         {
             Console.WriteLine($"PROGRAM [GUI] RENDER CART UI");
-            _client.UI.Cart.Show();
+            _client.UI.Checkout.Show();
         }
 
         private void button_Checkout_Click(object sender, EventArgs e)

@@ -19,20 +19,20 @@ public class Client {
         Simulating = simulating;
         
         if (Simulating) {
-            App.Testing.SimulationUtilities.Login(this);
-            App.Testing.ShopUtilities.LoadProducts(Store);
+            Testing.SimulationUtilities.Login(this);
+            Testing.ShopUtilities.LoadProducts(Store);
+            Testing.SimulationUtilities.AddToCart(this);
         }
     }
     
     public void LoadStoreProducts() {
-        App.Testing.ShopUtilities.LoadProducts(Store);
+        Testing.ShopUtilities.LoadProducts(Store);
     }
     
 }
 
 public class User(Client client) {
     public bool IsLoggedIn => Account is not null;
-    
     public Account? Account;
     public Cart? Cart;
     public bool Login(string username, string password) {
@@ -53,8 +53,12 @@ public class UI(Client client) {
     public readonly App.GUI.Login Login = new App.GUI.Login(client);
     public readonly App.GUI.SignUp SignUp = new App.GUI.SignUp(client);
     public readonly App.GUI.Home Home = new App.GUI.Home(client);
+    public readonly App.GUI.StudentHome StudentHome = new App.GUI.StudentHome(client);
+    public readonly App.GUI.StaffHome StaffHome = new App.GUI.StaffHome(client);
     public readonly App.GUI.Products Products = new App.GUI.Products(client);
     public readonly App.GUI.Cart Cart = new App.GUI.Cart(client);
     public readonly App.GUI.Checkout Checkout = new App.GUI.Checkout(client);
+    public readonly App.GUI.Receipt Receipt = new App.GUI.Receipt(client);
+    // public readonly App.GUI.Orders Orders = new App.GUI.Orders(client);
     public readonly App.GUI.Inventory Inventory = new App.GUI.Inventory(client);
 }

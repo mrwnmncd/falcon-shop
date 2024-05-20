@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cart));
             button1 = new Button();
             ListBox_Enumerate_Cart = new ListBox();
-            textBox1 = new TextBox();
+            TextBox_Subtotal = new TextBox();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             ListBox_Enumerate_Cart.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             ListBox_Enumerate_Cart.ForeColor = Color.White;
             ListBox_Enumerate_Cart.FormattingEnabled = true;
-            ListBox_Enumerate_Cart.Items.AddRange(new object[] { "item 1", "item 2" });
+            // ListBox_Enumerate_Cart.Items.AddRange(new object[] { "item 1", "item 2" });
             ListBox_Enumerate_Cart.Location = new Point(132, 216);
             ListBox_Enumerate_Cart.Margin = new Padding(2);
             ListBox_Enumerate_Cart.Name = "ListBox_Enumerate_Cart";
@@ -64,15 +64,15 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.Control;
-            textBox1.Font = new Font("Segoe UI", 11F);
-            textBox1.ForeColor = Color.DarkSlateBlue;
-            textBox1.Location = new Point(762, 516);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "P";
-            textBox1.Size = new Size(270, 32);
-            textBox1.TabIndex = 10;
+            TextBox_Subtotal.BackColor = SystemColors.Control;
+            TextBox_Subtotal.Font = new Font("Segoe UI", 11F);
+            TextBox_Subtotal.ForeColor = Color.DarkSlateBlue;
+            TextBox_Subtotal.Location = new Point(762, 516);
+            TextBox_Subtotal.Margin = new Padding(2);
+            TextBox_Subtotal.Name = "textBox1";
+            TextBox_Subtotal.PlaceholderText = "P";
+            TextBox_Subtotal.Size = new Size(270, 32);
+            TextBox_Subtotal.TabIndex = 10;
             // 
             // button2
             // 
@@ -96,7 +96,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1161, 659);
-            Controls.Add(textBox1);
+            Controls.Add(TextBox_Subtotal);
             Controls.Add(button2);
             Controls.Add(ListBox_Enumerate_Cart);
             Controls.Add(button1);
@@ -105,6 +105,8 @@
             Margin = new Padding(2);
             Name = "Cart";
             Text = "Cart";
+            Shown += Trigger_Shown;
+            FormClosing += Closing;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,6 +115,6 @@
         private Button button1;
         private ListBox ListBox_Enumerate_Cart;
         private Button button2;
-        private TextBox textBox1;
+        private TextBox TextBox_Subtotal;
     }
 }
