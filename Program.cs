@@ -12,7 +12,7 @@ namespace App {
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
 
-            Client client = new(simulating: true);
+            Client client = new(simulating: false);
 
             Application.Run(client.UI.Splash);
         }
