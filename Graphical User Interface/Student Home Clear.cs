@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace App.GUI {
-    public partial class StudentHomeE : Form {
+    public partial class StudentHome : Form {
         private readonly Client _client;
 
-        public StudentHomeE(Client client) {
+        public StudentHome(Client client) {
             _client = client;
             InitializeComponent();
         }
@@ -57,7 +57,7 @@ namespace App.GUI {
 }
 
 namespace App.GUI {
-    partial class StudentHomeE {
+    partial class StudentHome {
         private void EventTrigger_Shown(object sender, EventArgs e) {
             Console.WriteLine("    " + $"EVENT: SHOWN");
         }
@@ -90,7 +90,7 @@ namespace App.GUI {
             Console.WriteLine("    " + $"EVENT: CLICKED ORDERS");
             RenderOrdersUI();
         }
-
+        
         private void Label_Log_Out_Click(object sender, EventArgs e) {
             Console.WriteLine("    " + $"EVENT: CLICKED LOG OUT");
             LogoutUser();

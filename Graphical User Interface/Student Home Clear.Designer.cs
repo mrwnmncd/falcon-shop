@@ -1,6 +1,6 @@
 ﻿namespace App.GUI
 {
-    partial class StudentHomeE
+    partial class StudentHome
     {
         /// <summary>
         /// Required designer variable.
@@ -33,21 +33,17 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel Label_Email;
         private Guna.UI2.WinForms.Guna2Button Button_ShopItems;
         private Guna.UI2.WinForms.Guna2Button Button_MyCart;
-        private Guna.UI2.WinForms.Guna2Button Button_MyOrders;
         private void InitializeComponent()
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Label_UserID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Label_FullName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Label_Email = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Button_ShopItems = new Guna.UI2.WinForms.Guna2Button();
             Button_MyCart = new Guna.UI2.WinForms.Guna2Button();
-            Button_MyOrders = new Guna.UI2.WinForms.Guna2Button();
             Label_LogOut = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Label_GreetUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             SuspendLayout();
@@ -101,7 +97,7 @@
             Button_ShopItems.FillColor = Color.FromArgb(35, 69, 127);
             Button_ShopItems.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             Button_ShopItems.ForeColor = Color.White;
-            Button_ShopItems.Location = new Point(718, 208);
+            Button_ShopItems.Location = new Point(718, 229);
             Button_ShopItems.Name = "Button_ShopItems";
             Button_ShopItems.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Button_ShopItems.Size = new Size(371, 88);
@@ -121,33 +117,13 @@
             Button_MyCart.FillColor = Color.FromArgb(35, 69, 127);
             Button_MyCart.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
             Button_MyCart.ForeColor = Color.White;
-            Button_MyCart.Location = new Point(718, 311);
+            Button_MyCart.Location = new Point(718, 332);
             Button_MyCart.Name = "Button_MyCart";
             Button_MyCart.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Button_MyCart.Size = new Size(371, 88);
             Button_MyCart.TabIndex = 6;
             Button_MyCart.Text = "MY CART";
             Button_MyCart.Click += Button_Checkout_Click;
-            // 
-            // Button_MyOrders
-            // 
-            Button_MyOrders.BackColor = Color.Transparent;
-            Button_MyOrders.BorderRadius = 25;
-            Button_MyOrders.CustomizableEdges = customizableEdges5;
-            Button_MyOrders.DisabledState.BorderColor = Color.DarkGray;
-            Button_MyOrders.DisabledState.CustomBorderColor = Color.DarkGray;
-            Button_MyOrders.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Button_MyOrders.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Button_MyOrders.FillColor = Color.FromArgb(35, 69, 127);
-            Button_MyOrders.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
-            Button_MyOrders.ForeColor = Color.White;
-            Button_MyOrders.Location = new Point(718, 414);
-            Button_MyOrders.Name = "Button_MyOrders";
-            Button_MyOrders.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Button_MyOrders.Size = new Size(371, 88);
-            Button_MyOrders.TabIndex = 7;
-            Button_MyOrders.Text = "MY ORDERS";
-            Button_MyOrders.Click += Button_Orders_Click;
             // 
             // Label_LogOut
             // 
@@ -162,6 +138,7 @@
             Label_LogOut.Size = new Size(30, 30);
             Label_LogOut.TabIndex = 8;
             Label_LogOut.Text = null;
+            Label_LogOut.Click += Label_Log_Out_Click;
             // 
             // Label_GreetUser
             // 
@@ -180,12 +157,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Student_Home_cs;
+            BackgroundImage = Properties.Resources.Student_Home_2_Design_cs;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1162, 653);
             Controls.Add(Label_GreetUser);
             Controls.Add(Label_LogOut);
-            Controls.Add(Button_MyOrders);
             Controls.Add(Button_MyCart);
             Controls.Add(Button_ShopItems);
             Controls.Add(Label_Email);

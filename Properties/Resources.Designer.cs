@@ -283,6 +283,16 @@ namespace App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Student_Home_2_Design_cs {
+            get {
+                object obj = ResourceManager.GetObject("Student Home 2.Design.cs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Student_Home_cs {
             get {
                 object obj = ResourceManager.GetObject("Student Home.cs", resourceCulture);
