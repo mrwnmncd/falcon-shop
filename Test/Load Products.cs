@@ -1,8 +1,8 @@
 using App.Models;
 
-namespace App.Testing;
+namespace App.Utilities.Testing;
 
-public class ShopUtilities {
+public class Shop {
     public static void LoadProducts(Store store) {
         Console.WriteLine("TESTING [UTILITY] LOAD PRODUCTS");
 

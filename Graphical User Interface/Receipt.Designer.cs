@@ -67,7 +67,7 @@
             Button_Confirm.Size = new Size(183, 49);
             Button_Confirm.TabIndex = 9;
             Button_Confirm.Text = "CONFIRM";
-            Button_Confirm.Click += LogOut;
+            Button_Confirm.Click += Button_Confirm_Click;
             // 
             // Receipt
             // 
@@ -81,7 +81,10 @@
             DoubleBuffered = true;
             Name = "Receipt";
             Text = "Receipt";
-            Shown += TriggerOnRender;
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EventTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
         }
 

@@ -1,6 +1,6 @@
 namespace App.GUI
 {
-    partial class Products
+    partial class ShopItems
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@ namespace App.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             ComboBox_SelectProduct = new Guna.UI2.WinForms.Guna2ComboBox();
             ListBox_SelectVariant = new ListBox();
             PictureBox_Product = new PictureBox();
@@ -46,7 +46,7 @@ namespace App.GUI
             // 
             ComboBox_SelectProduct.BackColor = Color.Transparent;
             ComboBox_SelectProduct.BorderRadius = 3;
-            ComboBox_SelectProduct.CustomizableEdges = customizableEdges17;
+            ComboBox_SelectProduct.CustomizableEdges = customizableEdges1;
             ComboBox_SelectProduct.DrawMode = DrawMode.OwnerDrawFixed;
             ComboBox_SelectProduct.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboBox_SelectProduct.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -58,7 +58,7 @@ namespace App.GUI
             ComboBox_SelectProduct.Location = new Point(688, 223);
             ComboBox_SelectProduct.Margin = new Padding(3, 4, 3, 4);
             ComboBox_SelectProduct.Name = "ComboBox_SelectProduct";
-            ComboBox_SelectProduct.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            ComboBox_SelectProduct.ShadowDecoration.CustomizableEdges = customizableEdges2;
             ComboBox_SelectProduct.Size = new Size(293, 36);
             ComboBox_SelectProduct.TabIndex = 0;
             ComboBox_SelectProduct.SelectedIndexChanged += ComboBox_Select_Product_SelectedIndexChanged;
@@ -121,7 +121,7 @@ namespace App.GUI
             // Button_LogIn
             // 
             Button_LogIn.BorderRadius = 25;
-            Button_LogIn.CustomizableEdges = customizableEdges19;
+            Button_LogIn.CustomizableEdges = customizableEdges3;
             Button_LogIn.DisabledState.BorderColor = Color.DarkGray;
             Button_LogIn.DisabledState.CustomBorderColor = Color.DarkGray;
             Button_LogIn.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -131,13 +131,13 @@ namespace App.GUI
             Button_LogIn.ForeColor = Color.White;
             Button_LogIn.Location = new Point(1013, 713);
             Button_LogIn.Name = "Button_LogIn";
-            Button_LogIn.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            Button_LogIn.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Button_LogIn.Size = new Size(261, 56);
             Button_LogIn.TabIndex = 7;
             Button_LogIn.Text = "ADD TO CART";
-            Button_LogIn.Click += AddToCart;
+            Button_LogIn.Click += Button_AddToCart_Click;
             // 
-            // Products
+            // ShopItems
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -153,10 +153,12 @@ namespace App.GUI
             Controls.Add(ComboBox_SelectProduct);
             DoubleBuffered = true;
             Margin = new Padding(5);
-            Name = "Products";
+            Name = "ShopItems";
             Text = "Shop Items";
-            FormClosing += Closing;
-            Shown += Trigger_Shown;
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EventTrigger_Load;
+            Shown += EventTrigger_Shown;
             ((System.ComponentModel.ISupportInitialize)PictureBox_Product).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -44,7 +44,7 @@
             Label_Subtotal = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Label_ProgramMessage = new Label();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            Button_Home = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // ListBox_Enumerate_CartItems
@@ -93,7 +93,7 @@
             Button_ClearCart.Size = new Size(180, 33);
             Button_ClearCart.TabIndex = 4;
             Button_ClearCart.Text = "CLEAR CART";
-            Button_ClearCart.Click += Button_CancelOrder_Click;
+            Button_ClearCart.Click += Button_ClearCart_Click;
             // 
             // Button_ClearItem
             // 
@@ -112,7 +112,7 @@
             Button_ClearItem.Size = new Size(180, 33);
             Button_ClearItem.TabIndex = 5;
             Button_ClearItem.Text = "CLEAR ITEM";
-            Button_ClearItem.Click += Button_ClearItems_Click;
+            Button_ClearItem.Click += Button_ClearItem_Click;
             // 
             // Label_Cart_Count
             // 
@@ -160,24 +160,25 @@
             Label_ProgramMessage.Size = new Size(0, 25);
             Label_ProgramMessage.TabIndex = 9;
             // 
-            // guna2Button1
+            // Button_Home
             // 
-            guna2Button1.BackColor = Color.Transparent;
-            guna2Button1.BorderRadius = 25;
-            guna2Button1.CustomizableEdges = customizableEdges7;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(29, 73, 167);
-            guna2Button1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(100, 512);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button1.Size = new Size(339, 57);
-            guna2Button1.TabIndex = 10;
-            guna2Button1.Text = "HOME";
+            Button_Home.BackColor = Color.Transparent;
+            Button_Home.BorderRadius = 25;
+            Button_Home.CustomizableEdges = customizableEdges7;
+            Button_Home.DisabledState.BorderColor = Color.DarkGray;
+            Button_Home.DisabledState.CustomBorderColor = Color.DarkGray;
+            Button_Home.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Button_Home.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Button_Home.FillColor = Color.FromArgb(29, 73, 167);
+            Button_Home.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            Button_Home.ForeColor = Color.White;
+            Button_Home.Location = new Point(100, 512);
+            Button_Home.Name = "Button_Home";
+            Button_Home.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            Button_Home.Size = new Size(339, 57);
+            Button_Home.TabIndex = 10;
+            Button_Home.Text = "HOME";
+            Button_Home.Click += Button_Home_Click;
             // 
             // Checkout
             // 
@@ -186,7 +187,7 @@
             BackgroundImage = Properties.Resources.Checkout_cs;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1162, 653);
-            Controls.Add(guna2Button1);
+            Controls.Add(Button_Home);
             Controls.Add(Label_ProgramMessage);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(Label_Subtotal);
@@ -198,8 +199,10 @@
             DoubleBuffered = true;
             Name = "Checkout";
             Text = "Check Out";
-            FormClosing += Closing;
-            Shown += Trigger_Shown;
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EventTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -214,6 +217,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel Label_Subtotal;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Label Label_ProgramMessage;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Button_Home;
     }
 }

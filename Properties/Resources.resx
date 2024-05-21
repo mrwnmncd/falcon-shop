@@ -131,10 +131,10 @@
     <value>..\Assets\User Interface\Staff Home.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NSTP SHIRT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\NSTP SHIRT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\NSTP SHIRT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PE UNIFORM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\PE UNIFORM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\PE UNIFORM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Splash.cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\User Interface\Splash.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -152,10 +152,10 @@
     <value>..\Assets\User Interface\Shop.Design.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PANTS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\PANTS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\PANTS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LANYARD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\LANYARD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\LANYARD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Student Home.cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\User Interface\Student Home.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -164,13 +164,13 @@
     <value>..\Assets\BACKDROP 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BLOUSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\BLOUSE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\BLOUSE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sign Up.cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\User Interface\Sign Up.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="POLO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\POLO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\POLO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Checkout.cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\User Interface\Checkout.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -179,13 +179,13 @@
     <value>..\Assets\SPLASH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PE PANTS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\PE PANTS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\PE PANTS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Receipt.Design.cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\User Interface\Receipt.Design.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SKIRT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Other Assets\adu.unif\SKIRT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Other Assets\Products\SKIRT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Receipt.cs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\User Interface\Receipt.cs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

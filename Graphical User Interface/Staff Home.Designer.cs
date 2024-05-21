@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Button_Orders = new Guna.UI2.WinForms.Guna2Button();
             Label_Email = new Guna.UI2.WinForms.Guna2HtmlLabel();
             Label_FullName = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,7 +45,7 @@
             // 
             Button_Orders.BackColor = Color.Transparent;
             Button_Orders.BorderRadius = 25;
-            Button_Orders.CustomizableEdges = customizableEdges5;
+            Button_Orders.CustomizableEdges = customizableEdges1;
             Button_Orders.DisabledState.BorderColor = Color.DarkGray;
             Button_Orders.DisabledState.CustomBorderColor = Color.DarkGray;
             Button_Orders.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -55,10 +55,11 @@
             Button_Orders.ForeColor = Color.White;
             Button_Orders.Location = new Point(717, 266);
             Button_Orders.Name = "Button_Orders";
-            Button_Orders.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Button_Orders.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Button_Orders.Size = new Size(371, 88);
             Button_Orders.TabIndex = 10;
             Button_Orders.Text = "ORDERS";
+            Button_Orders.Click += Button_Orders_Click;
             // 
             // Label_Email
             // 
@@ -111,7 +112,7 @@
             // 
             Button_Inventory.BackColor = Color.Transparent;
             Button_Inventory.BorderRadius = 25;
-            Button_Inventory.CustomizableEdges = customizableEdges7;
+            Button_Inventory.CustomizableEdges = customizableEdges3;
             Button_Inventory.DisabledState.BorderColor = Color.DarkGray;
             Button_Inventory.DisabledState.CustomBorderColor = Color.DarkGray;
             Button_Inventory.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -121,10 +122,11 @@
             Button_Inventory.ForeColor = Color.White;
             Button_Inventory.Location = new Point(717, 370);
             Button_Inventory.Name = "Button_Inventory";
-            Button_Inventory.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            Button_Inventory.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Button_Inventory.Size = new Size(371, 88);
             Button_Inventory.TabIndex = 11;
             Button_Inventory.Text = "INVENTORY";
+            Button_Inventory.Click += Button_Inventory_Click;
             // 
             // Label_LogOut
             // 
@@ -139,8 +141,9 @@
             Label_LogOut.Size = new Size(30, 30);
             Label_LogOut.TabIndex = 12;
             Label_LogOut.Text = null;
+            Label_LogOut.Click += Label_Log_Out_Click;
             // 
-            // Staff_Home
+            // StaffHome
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Staff_Home_cs;
@@ -154,8 +157,12 @@
             Controls.Add(Label_UserID);
             Controls.Add(Label_GreetUser);
             DoubleBuffered = true;
-            Name = "Staff_Home";
+            Name = "StaffHome";
             Text = "Staff_Home";
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EevntTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
             PerformLayout();
         }

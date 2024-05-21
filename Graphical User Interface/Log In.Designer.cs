@@ -108,6 +108,10 @@
             Controls.Add(TextBox_Enter_UsernameID);
             DoubleBuffered = true;
             Name = "Login";
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EevntTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
         }
 

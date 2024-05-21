@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             TextBox_ID_Number = new Guna.UI2.WinForms.Guna2TextBox();
             TextBox_Enter_Given_Name = new Guna.UI2.WinForms.Guna2TextBox();
             TextBox_Enter_Surname = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,7 +54,7 @@
             // 
             // TextBox_ID_Number
             // 
-            TextBox_ID_Number.CustomizableEdges = customizableEdges1;
+            TextBox_ID_Number.CustomizableEdges = customizableEdges15;
             TextBox_ID_Number.DefaultText = "";
             TextBox_ID_Number.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_ID_Number.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -69,13 +69,13 @@
             TextBox_ID_Number.PasswordChar = '\0';
             TextBox_ID_Number.PlaceholderText = "2023*****";
             TextBox_ID_Number.SelectedText = "";
-            TextBox_ID_Number.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            TextBox_ID_Number.ShadowDecoration.CustomizableEdges = customizableEdges16;
             TextBox_ID_Number.Size = new Size(261, 35);
             TextBox_ID_Number.TabIndex = 0;
             // 
             // TextBox_Enter_Given_Name
             // 
-            TextBox_Enter_Given_Name.CustomizableEdges = customizableEdges3;
+            TextBox_Enter_Given_Name.CustomizableEdges = customizableEdges17;
             TextBox_Enter_Given_Name.DefaultText = "";
             TextBox_Enter_Given_Name.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Enter_Given_Name.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -90,13 +90,13 @@
             TextBox_Enter_Given_Name.PasswordChar = '\0';
             TextBox_Enter_Given_Name.PlaceholderText = "Kalix Jace";
             TextBox_Enter_Given_Name.SelectedText = "";
-            TextBox_Enter_Given_Name.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            TextBox_Enter_Given_Name.ShadowDecoration.CustomizableEdges = customizableEdges18;
             TextBox_Enter_Given_Name.Size = new Size(261, 35);
             TextBox_Enter_Given_Name.TabIndex = 1;
             // 
             // TextBox_Enter_Surname
             // 
-            TextBox_Enter_Surname.CustomizableEdges = customizableEdges5;
+            TextBox_Enter_Surname.CustomizableEdges = customizableEdges19;
             TextBox_Enter_Surname.DefaultText = "";
             TextBox_Enter_Surname.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Enter_Surname.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -111,13 +111,13 @@
             TextBox_Enter_Surname.PasswordChar = '\0';
             TextBox_Enter_Surname.PlaceholderText = "Martinez";
             TextBox_Enter_Surname.SelectedText = "";
-            TextBox_Enter_Surname.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            TextBox_Enter_Surname.ShadowDecoration.CustomizableEdges = customizableEdges20;
             TextBox_Enter_Surname.Size = new Size(261, 35);
             TextBox_Enter_Surname.TabIndex = 2;
             // 
             // TextBox_Confirm_Passphrase
             // 
-            TextBox_Confirm_Passphrase.CustomizableEdges = customizableEdges7;
+            TextBox_Confirm_Passphrase.CustomizableEdges = customizableEdges21;
             TextBox_Confirm_Passphrase.DefaultText = "";
             TextBox_Confirm_Passphrase.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Confirm_Passphrase.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -132,13 +132,13 @@
             TextBox_Confirm_Passphrase.PasswordChar = '•';
             TextBox_Confirm_Passphrase.PlaceholderText = "secret";
             TextBox_Confirm_Passphrase.SelectedText = "";
-            TextBox_Confirm_Passphrase.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            TextBox_Confirm_Passphrase.ShadowDecoration.CustomizableEdges = customizableEdges22;
             TextBox_Confirm_Passphrase.Size = new Size(261, 35);
             TextBox_Confirm_Passphrase.TabIndex = 4;
             // 
             // TextBox_Enter_Passphrase
             // 
-            TextBox_Enter_Passphrase.CustomizableEdges = customizableEdges9;
+            TextBox_Enter_Passphrase.CustomizableEdges = customizableEdges23;
             TextBox_Enter_Passphrase.DefaultText = "";
             TextBox_Enter_Passphrase.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Enter_Passphrase.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -153,13 +153,13 @@
             TextBox_Enter_Passphrase.PasswordChar = '•';
             TextBox_Enter_Passphrase.PlaceholderText = "secret";
             TextBox_Enter_Passphrase.SelectedText = "";
-            TextBox_Enter_Passphrase.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            TextBox_Enter_Passphrase.ShadowDecoration.CustomizableEdges = customizableEdges24;
             TextBox_Enter_Passphrase.Size = new Size(261, 35);
             TextBox_Enter_Passphrase.TabIndex = 3;
             // 
             // TextBox_Enter_Email
             // 
-            TextBox_Enter_Email.CustomizableEdges = customizableEdges11;
+            TextBox_Enter_Email.CustomizableEdges = customizableEdges25;
             TextBox_Enter_Email.DefaultText = "";
             TextBox_Enter_Email.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TextBox_Enter_Email.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -174,14 +174,14 @@
             TextBox_Enter_Email.PasswordChar = '\0';
             TextBox_Enter_Email.PlaceholderText = "kalixjacemartinez@adamson.edu.ph";
             TextBox_Enter_Email.SelectedText = "";
-            TextBox_Enter_Email.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            TextBox_Enter_Email.ShadowDecoration.CustomizableEdges = customizableEdges26;
             TextBox_Enter_Email.Size = new Size(528, 35);
             TextBox_Enter_Email.TabIndex = 5;
             // 
             // Button_Sign_Up
             // 
             Button_Sign_Up.BorderRadius = 25;
-            Button_Sign_Up.CustomizableEdges = customizableEdges13;
+            Button_Sign_Up.CustomizableEdges = customizableEdges27;
             Button_Sign_Up.DisabledState.BorderColor = Color.DarkGray;
             Button_Sign_Up.DisabledState.CustomBorderColor = Color.DarkGray;
             Button_Sign_Up.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -191,10 +191,11 @@
             Button_Sign_Up.ForeColor = Color.White;
             Button_Sign_Up.Location = new Point(843, 512);
             Button_Sign_Up.Name = "Button_Sign_Up";
-            Button_Sign_Up.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            Button_Sign_Up.ShadowDecoration.CustomizableEdges = customizableEdges28;
             Button_Sign_Up.Size = new Size(225, 56);
             Button_Sign_Up.TabIndex = 6;
             Button_Sign_Up.Text = "SIGN UP";
+            Button_Sign_Up.Click += Button_SignUp_Click;
             // 
             // Label_Log_In
             // 
@@ -208,6 +209,8 @@
             Label_Log_In.Name = "Label_Log_In";
             Label_Log_In.Size = new Size(52, 56);
             Label_Log_In.TabIndex = 7;
+            Label_Log_In.Text = null;
+            Label_Log_In.Click += Label_Login_Click;
             // 
             // SignUp
             // 
@@ -227,6 +230,10 @@
             DoubleBuffered = true;
             Name = "SignUp";
             Text = "k";
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EevntTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
         }
 

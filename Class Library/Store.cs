@@ -1,7 +1,6 @@
 using System.Text.Json;
 using System.Transactions;
 using Microsoft.Data.Sqlite;
-
 using App.Testing;
 
 namespace App.Models;
@@ -31,11 +30,25 @@ public class Store {
     }
 
     public Product? FindProductById(string id) {
-        return Inventory.FirstOrDefault(p => p?.Id == id);
+        Product? product = null;
+        foreach (Models.Product item in Inventory) {
+            if (item?.Id != id) continue;
+            product = item;
+            break;
+        }
+
+        return product;
     }
-    
+
     public Product? FindProductByName(string name) {
-        return Inventory.FirstOrDefault(p => p?.Name == name);
+        Product? product = null;
+        foreach (var item in Inventory) {
+            if (item?.Name != name) continue;
+            product = item;
+            break;
+        }
+
+        return product;
     }
 
     public dynamic RecordTransaction(Cart cart) {
@@ -48,12 +61,12 @@ public class Store {
          * 6. Send the Transaction to Database
          * 7. Return the Transaction
          */
-        
+
         Account account = cart.Account;
-        
+
         foreach (Product item in cart.Items) {
             Product? product = FindProductById(item.Id);
-            
+
             if (product is null) return false;
 
             foreach (InventoryItem? inventoryItem in Inventory)
@@ -65,30 +78,31 @@ public class Store {
         }
 
         string transactionParticulars = JsonSerializer.Serialize(cart.Items);
-        Snowflake  idGenerator= new Snowflake(0,0);
-         string transactionId = idGenerator.CreateId().ToString();
+        Snowflake idGenerator = new Snowflake(0, 0);
+        string transactionId = idGenerator.CreateId().ToString();
+        transactionId = transactionId.Substring(transactionId.Length - 6);
         string transaction = JsonSerializer.Serialize(new {
             Id = transactionId,
             Account = account,
             Items = transactionParticulars,
             Date = DateTime.Now
         });
-        
-         SqliteConnection connection = new SqliteConnection($"Data Source={App.Environment.Constants.DatabaseUrl}");
-         connection.Open();
-         {
-             string lookupQuery = $"SELECT * FROM Transactions WHERE Id = '{transactionId}'";
-             using var command = new SqliteCommand(lookupQuery, connection);
-             var reader = command.ExecuteReader();
-             reader.Read();
-             if (reader.HasRows) return false;
-         }
-         {
-             string insertTransactionQuery = $"INSERT INTO Transactions VALUES ('{transactionId}', '{transaction}')";
-             using var accountCommand = new SqliteCommand(insertTransactionQuery, connection);
-             accountCommand.ExecuteNonQuery();   
-         }
-         
+
+        SqliteConnection connection = new SqliteConnection($"Data Source={App.Environment.Constants.DatabaseUrl}");
+        connection.Open();
+        {
+            string lookupQuery = $"SELECT * FROM Transactions WHERE Id = '{transactionId}'";
+            using var command = new SqliteCommand(lookupQuery, connection);
+            var reader = command.ExecuteReader();
+            reader.Read();
+            if (reader.HasRows) return false;
+        }
+        {
+            string insertTransactionQuery = $"INSERT INTO Transactions VALUES ('{transactionId}', '{transaction}')";
+            using var accountCommand = new SqliteCommand(insertTransactionQuery, connection);
+            accountCommand.ExecuteNonQuery();
+        }
+
         return transactionId;
     }
 }

@@ -41,7 +41,10 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Splash";
             Text = "FALCON SHOP";
-            Shown += Trigger_Shown;
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EventTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
         }
 

@@ -10,28 +10,24 @@ using System.Windows.Forms;
 using App.Models;
 
 namespace App.GUI {
-    public partial class Products : Form {
+    public partial class ShopItems : Form {
         private readonly Client _client;
         private string itemSelection = default;
 
-        public Products(Client client) {
+        public ShopItems(Client client) {
             _client = client;
             InitializeComponent();
         }
 
-        private void Trigger_Shown(object sender, EventArgs e) {
-            Console.WriteLine("PROGRAM [GUI] RENDERED PRODUCT UI");
+        private void LoadComponents() {
             ComboBox_SelectProduct.SelectedIndex = 0;
         }
 
-        private void Closing(object sender, FormClosingEventArgs e) {
-            Console.WriteLine("    " + $"GUI: CLOSE PRODUCTS");
-            this.Hide();
-            e.Cancel = true;
+        public void ReturnHome() {
+            _client.UI.StudentHome.Show();
         }
 
-        private void AddToCart(object sender, EventArgs e) {
-            Console.WriteLine("PROGRAM [EVENT] ADD TO CART");
+        private void AddToCart() {
             Button_LogIn.Enabled = false;
             string productSelection = ListBox_SelectVariant.Text;
             string quantityInput = TextBox_Quantity.Text;
@@ -39,18 +35,24 @@ namespace App.GUI {
             int quantity = int.Parse(quantityInput);
 
             Console.WriteLine("    " + $"{itemSelection} {productSelection} x{quantity}");
-            _client.User.Cart!.AddItem(new InventoryItem() { Id = itemSelection }, quantity);
-            Label_ProgramMessage.Text = "Added to Cart!";
-            Task.Delay(1000).Wait();
-            Label_ProgramMessage.Text = "";
-            Button_LogIn.Enabled = true;
+            Product? addToCart = _client.User.Cart!.AddItem(new InventoryItem() { Id = itemSelection }, quantity);
+            if (addToCart is not null) {
+                Label_ProgramMessage.Text = "Added to Cart!";
+                Task.Delay(1000).Wait();
+                Label_ProgramMessage.Text = "";
+                Button_LogIn.Enabled = true;
+            }
+            else {
+                Label_ProgramMessage.Text = "Failed to Add to Cart!";
+                Task.Delay(1000).Wait();
+                Label_ProgramMessage.Text = "";
+                Button_LogIn.Enabled = true;
+            }
         }
 
-        private void ListBox_Select_Variant_SelectedIndexChanged(object sender, EventArgs e) {
+        private void LoadItemInformation() {
             string productSelection = ListBox_SelectVariant.Text;
 
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(Products));
             switch (ListBox_SelectVariant.Text) {
                 case "Male Polo - Extra Small":
                 case "Male Polo - Small":
@@ -58,7 +60,8 @@ namespace App.GUI {
                 case "Male Polo - Large":
                 case "Male Polo - Extra Large":
                 case "Male Polo - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("POLO");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("POLO.png"));
                     break;
                 case "Female Blouse - Extra Small":
                 case "Female Blouse - Small":
@@ -66,7 +69,8 @@ namespace App.GUI {
                 case "Female Blouse - Large":
                 case "Female Blouse - Extra Large":
                 case "Female Blouse - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("BLOUSE");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("BLOUSE.png"));
                     break;
                 case "Male Slacks - Extra Small":
                 case "Male Slacks - Small":
@@ -74,14 +78,16 @@ namespace App.GUI {
                 case "Male Slacks - Large":
                 case "Male Slacks - Extra Large":
                 case "Male Slacks - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("PANTS");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("PANTS.png"));
                     break;
                 case "Female Skirt - Small":
                 case "Female Skirt - Medium":
                 case "Female Skirt - Large":
                 case "Female Skirt - Extra Large":
                 case "Female Skirt - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("SKIRT");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("SKIRT.png"));
                     break;
                 case "Unisex PE Shirt - Extra Small":
                 case "Unisex PE Shirt - Small":
@@ -89,7 +95,8 @@ namespace App.GUI {
                 case "Unisex PE Shirt - Large":
                 case "Unisex PE Shirt - Extra Large":
                 case "Unisex PE Shirt - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("PE UNIFORM");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("PE UNIFORM.png"));
                     break;
                 case "Unisex Jogging Pants - Extra Small":
                 case "Unisex Jogging Pants - Small":
@@ -97,7 +104,8 @@ namespace App.GUI {
                 case "Unisex Jogging Pants - Large":
                 case "Unisex Jogging Pants - Extra Large":
                 case "Unisex Jogging Pants - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("PE PANTS");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("PE PANTS.png"));
                     break;
                 case "Unisex NSTP Shirt - Extra Small":
                 case "Unisex NSTP Shirt - Small":
@@ -105,7 +113,8 @@ namespace App.GUI {
                 case "Unisex NSTP Shirt - Large":
                 case "Unisex NSTP Shirt - Extra Large":
                 case "Unisex NSTP Shirt - Double Extra Large":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("NSTP SHIRT");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("NSTP SHIRT.png"));
                     break;
                 case "Lanyard - College of Architecture":
                 case "Lanyard - College of Business Administration":
@@ -118,10 +127,12 @@ namespace App.GUI {
                 case "Lanyard - Graduate School":
                 case "Lanyard - St. Vincent School of Theology":
                 case "Lanyard - Basic Education Department":
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("LANYARD");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("LANYARD.png"));
                     break;
                 default:
-                    PictureBox_Product.BackgroundImage = (Image)resources.GetObject("POLO");
+                    PictureBox_Product.BackgroundImage = Image.FromFile
+                        (Environment.Constants.Assets.Products("POLO.png"));
                     break;
             }
 
@@ -157,13 +168,11 @@ namespace App.GUI {
                 "Lanyard - St. Vincent School of Theology" => "ACCESSORIES-006",
                 "Lanyard - Basic Education Department" => "ACCESSORIES-007",
             };
-
-            Console.WriteLine(_client.Store.FindProductById(productSelection)?.Price.ToString());
-
-            Label_Price.Text = _client.Store.FindProductById(productSelection)?.Price.ToString() ?? "0.00";
+            
+            Label_Price.Text = (String)$"PHP {_client.Store.FindProductById(itemSelection)?.Price:C}" ?? "0.00";
         }
 
-        private void ComboBox_Select_Product_SelectedIndexChanged(object sender, EventArgs e) {
+        private void LoadProductListings() {
             ListBox_SelectVariant.Items.Clear();
             switch (ComboBox_SelectProduct.Text) {
                 case "UNIFORM":
@@ -249,6 +258,46 @@ namespace App.GUI {
                     });
                     break;
             }
+        }
+    }
+}
+
+namespace App.GUI {
+    partial class ShopItems {
+        private void EventTrigger_Shown(object sender, EventArgs e) {
+            Console.WriteLine("    " + $"EVENT: SHOWN");
+        }
+
+        private void EventTrigger_Load(object sender, EventArgs e) {
+            Console.WriteLine("PROGRAM [GUI] SHOP ITEMS UI");
+            Console.WriteLine("    " + $"EVENT: LOAD");
+            LoadComponents();
+        }
+
+        private void EventTrigger_FormClosing(object sender, FormClosingEventArgs e) {
+            Console.WriteLine("    " + $"EVENT: CLOSING");
+            this.Hide();
+            e.Cancel = true;
+            ReturnHome();
+        }
+
+        private void EventTrigger_FormClosed(object sender, FormClosedEventArgs e) {
+            Console.WriteLine("    " + $"EVENT: CLOSED");
+        }
+
+        private void Button_AddToCart_Click(object sender, EventArgs e) {
+            Console.WriteLine("    " + $"EVENT: CLICKED ADD TO CART");
+            AddToCart();
+        }
+
+        private void ListBox_Select_Variant_SelectedIndexChanged(object sender, EventArgs e) {
+            Console.WriteLine("    " + $"EVENT: LISTBOX SELECTED ITEM");
+            LoadItemInformation();
+        }
+
+        private void ComboBox_Select_Product_SelectedIndexChanged(object sender, EventArgs e) {
+            Console.WriteLine("    " + $"EVENT: COMBOBOX SELECTED ITEM");
+            LoadProductListings();
         }
     }
 }

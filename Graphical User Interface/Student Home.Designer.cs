@@ -107,7 +107,7 @@
             Button_ShopItems.Size = new Size(371, 88);
             Button_ShopItems.TabIndex = 5;
             Button_ShopItems.Text = "SHOP ITEMS";
-            Button_ShopItems.Click += RenderShopUI;
+            Button_ShopItems.Click += Button_Shop_Click;
             // 
             // Button_MyCart
             // 
@@ -127,7 +127,7 @@
             Button_MyCart.Size = new Size(371, 88);
             Button_MyCart.TabIndex = 6;
             Button_MyCart.Text = "MY CART";
-            Button_MyCart.Click += RenderCheckoutUI;
+            Button_MyCart.Click += Button_Checkout_Click;
             // 
             // Button_MyOrders
             // 
@@ -147,7 +147,7 @@
             Button_MyOrders.Size = new Size(371, 88);
             Button_MyOrders.TabIndex = 7;
             Button_MyOrders.Text = "MY ORDERS";
-            Button_MyOrders.Click += RenderOrdersUI;
+            Button_MyOrders.Click += Button_Orders_Click;
             // 
             // Label_LogOut
             // 
@@ -162,6 +162,7 @@
             Label_LogOut.Size = new Size(30, 30);
             Label_LogOut.TabIndex = 8;
             Label_LogOut.Text = null;
+            Label_LogOut.Click += Label_Log_Out_Click;
             // 
             // Label_GreetUser
             // 
@@ -194,6 +195,10 @@
             DoubleBuffered = true;
             Name = "StudentHome";
             Text = "Student_Home";
+            FormClosing += EventTrigger_FormClosing;
+            FormClosed += EventTrigger_FormClosed;
+            Load += EventTrigger_Load;
+            Shown += EventTrigger_Shown;
             ResumeLayout(false);
         }
 
